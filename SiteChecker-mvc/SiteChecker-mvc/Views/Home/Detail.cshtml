@@ -1,0 +1,88 @@
+﻿@model IEnumerable<SiteChecker_mvc.Models.ErrorLogs>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<div class="card shadow border-0 mt-40">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Detail WebSite</h2>
+            </div>
+        </div>
+    </div>
+
+    
+    <table class="table table-primary">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PK_ErrorLogs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WebSite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ErrorCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartOfError)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndOfError)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FK_WebSiteId)
+            </th>
+        </tr>
+        </thead>
+
+
+        <tbody class="table-secondary">
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.Name) *@
+                @item.PK_ErrorLogs
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.Name) *@
+                @item.WebSite
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.ServerStatus) *@
+                @item.FK_WebSiteId
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.Url) *@
+                @item.ErrorCode
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.ServerStatus) *@
+                @item.StartOfError
+            </td>
+            <td>
+                @* @Html.DisplayFor(modelItem => item.ServerStatus) *@
+                @item.EndOfError
+            </td>
+          
+       
+        </tr>
+        }
+        </tbody>
+    
+    
+    
+    </table>
+
+
+
+
+
+
+
+
+
+
+</div>
