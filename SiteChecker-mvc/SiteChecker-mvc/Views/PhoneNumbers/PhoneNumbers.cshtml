@@ -16,6 +16,9 @@
     <thead>
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.PK_PhoneNumber)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
@@ -25,7 +28,7 @@
             Web Sites
         </th>
         <th>
-            <a asp-controller="PhoneNumbers" asp-action="Create"  class="btn btn-success mx-2">
+            <a asp-controller="PhoneNumbers" asp-action="Create" class="btn btn-success mx-2">
                 <i class="bi bi-pencil-square"></i>
                 Create New Phone Number
             </a>
@@ -67,7 +70,6 @@
         @*         <li>@Html.DisplayFor(modelItem => website.Name) (@Html.DisplayFor(modelItem => website.Url))</li> *@
         @*     } *@
         @* </ul> *@
-
     </tr>
     }
     </tbody>
