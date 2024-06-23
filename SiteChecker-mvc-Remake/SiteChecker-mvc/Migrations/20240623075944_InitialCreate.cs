@@ -14,6 +14,20 @@ namespace SiteChecker_mvc.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    PK_UserId = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Username = table.Column<string>(type: "TEXT", nullable: false),
+                    Password = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.PK_UserId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "WebSites",
                 columns: table => new
                 {
@@ -54,6 +68,11 @@ namespace SiteChecker_mvc.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "PK_UserId", "Password", "Username" },
+                values: new object[] { 1, "aaa", "user" });
+
+            migrationBuilder.InsertData(
                 table: "WebSites",
                 columns: new[] { "PK_WebSite", "Name", "Number1", "Number2", "ServerStatus", "Url" },
                 values: new object[,]
@@ -73,6 +92,9 @@ namespace SiteChecker_mvc.Migrations
         {
             migrationBuilder.DropTable(
                 name: "ErrorLogs");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "WebSites");

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AshkaN\\Desktop\\WR-MVC-Remake\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj": {}
+    "C:\\Users\\Ashkan\\Desktop\\GitHub\\Website-Checker-mvc\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AshkaN\\Desktop\\WR-MVC-Remake\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj": {
+    "C:\\Users\\Ashkan\\Desktop\\GitHub\\Website-Checker-mvc\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AshkaN\\Desktop\\WR-MVC-Remake\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj",
+        "projectUniqueName": "C:\\Users\\Ashkan\\Desktop\\GitHub\\Website-Checker-mvc\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj",
         "projectName": "SiteChecker-mvc",
-        "projectPath": "C:\\Users\\AshkaN\\Desktop\\WR-MVC-Remake\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj",
-        "packagesPath": "C:\\Users\\AshkaN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AshkaN\\Desktop\\WR-MVC-Remake\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\obj\\",
+        "projectPath": "C:\\Users\\Ashkan\\Desktop\\GitHub\\Website-Checker-mvc\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\SiteChecker-mvc.csproj",
+        "packagesPath": "C:\\Users\\Ashkan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashkan\\Desktop\\GitHub\\Website-Checker-mvc\\SiteChecker-mvc-Remake\\SiteChecker-mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AshkaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ashkan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

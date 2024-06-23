@@ -46,6 +46,33 @@ namespace SiteChecker_mvc.Migrations
                     b.ToTable("ErrorLogs");
                 });
 
+            modelBuilder.Entity("SiteChecker_mvc.Models.Users", b =>
+                {
+                    b.Property<int>("PK_UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("PK_UserId");
+
+                    b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            PK_UserId = 1,
+                            Password = "aaa",
+                            Username = "user"
+                        });
+                });
+
             modelBuilder.Entity("SiteChecker_mvc.Models.WebSites", b =>
                 {
                     b.Property<int>("PK_WebSite")
