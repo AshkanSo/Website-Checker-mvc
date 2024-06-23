@@ -12,12 +12,12 @@ public class LoginController : Controller
     {
         _context = context;
     }
-    public IActionResult Index()
+    public IActionResult Login()
     {
         return View();
     }
 
-    // [HttpPost]
+    [HttpPost]
     public IActionResult Login(string username, string password)
     {
         var user = _context.Users
@@ -26,8 +26,6 @@ public class LoginController : Controller
         if (user != null)
         {
             // کاربر پیدا شد، ورود موفقیت‌آمیز
-            // می‌توانید اطلاعات کاربر را در سشن ذخیره کنید
-            HttpContext.Session.SetString("Username", user.Username);
             return RedirectToAction("Index", "Home");
         }
         else

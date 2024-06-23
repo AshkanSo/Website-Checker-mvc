@@ -44,7 +44,7 @@ public class HomeController : Controller
             _context.SaveChanges();
             TempData["Success"] = "Website Created Successfully";
             return RedirectToAction("Index");
-            
+        
     }
    
     public IActionResult Delete(int? id)

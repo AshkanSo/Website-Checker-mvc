@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteChecker-mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c17b87eb3f2d72ae12698ef130aa1fbe2b29f065")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c81b72141dd15d432b13519d59a3e742f7e1b56a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteChecker-mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteChecker-mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
