@@ -91,14 +91,16 @@
                     <div class="box-title">
                         <h3 style="margin-top: 20px">@item.Name</h3>
                     </div>
-                    <div class="box-text">
+                    <div class="box-text" style="margin-bottom: 5px">
                        @if (item.ServerStatus == true)
                               {
-                                 <span style="color: green">@item.ServerStatus</span>
+                                  <span>وضعیت سایت : </span>
+                                 <span style="color: green">فعال</span>
                               }
                        else
                             {
-                           <span style="color: red">@item.ServerStatus</span>
+                                <span>وضعیت سایت : </span>
+                           <span style="color: red">غیر فعال</span>
                             }
                     </div>
                     <div class="box-btn">
